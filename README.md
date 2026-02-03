@@ -16,7 +16,7 @@ Il lavoro si articola in tre fasi principali:
 2. **Analisi Linguistica (Corpus Paisà):** Estrazione e quantificazione delle professioni tramite espressioni regolari e euristiche personalizzate, distinguendo il genere grammaticale.
 3. **Comparazione:** Confronto tra i valori di gender gap reali e quelli linguistici per evidenziare le discrepanze tra realtà sociale e linguaggio.
 
-## 📂 Struttura del Repository
+## Struttura del Repository
 Il lavoro è organizzato in una struttura modulare per garantire leggibilità e riproducibilità:
 
 * **Progetto.ipynb**: Notebook principale con le analisi e le visualizzazioni grafiche.
