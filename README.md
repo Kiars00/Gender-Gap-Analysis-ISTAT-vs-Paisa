@@ -52,4 +52,4 @@ Dall'analisi emerge che il **Corpus Paisà tende a sovrastimare la presenza masc
 ##  Download Rapido
 Se desideri scaricare l'intero progetto pronto all'uso (inclusi i dataset pesanti >100MB e la struttura delle cartelle già configurata), puoi scaricare il pacchetto completo da Google Drive:
 
-> [**Scarica la cartella del progetto da Google Drive**](https://liveunibo-my.sharepoint.com/:u:/g/personal/chiara_mancuso5_studio_unibo_it/EY601zz6Rh9As1x2hhGOyjkBP1mPfg2IObVUNZZElVxjLQ?e=7i1Frx)
+> [**Scarica la cartella del progetto da One Drive**](https://liveunibo-my.sharepoint.com/:u:/g/personal/chiara_mancuso5_studio_unibo_it/EY601zz6Rh9As1x2hhGOyjkBP1mPfg2IObVUNZZElVxjLQ?e=7i1Frx)
