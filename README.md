@@ -1,55 +1,67 @@
-# Gender-Gap-Analysis-ISTAT-vs-Paisa
-Analisi comparativa tra la distribuzione occupazionale reale in Italia (dati ISTAT) e i bias di genere nella rappresentazione linguistica delle professioni all'interno del Corpus Paisà.
+# 📊 Gender Bias Analysis: ISTAT vs. Paisà Corpus
 
+**Introduction to Programming** project (a.y. 2024-2025) by **Chiara Mancuso**.
 
-# Analisi dei Bias di Genere: ISTAT vs. Corpus Paisà
-
-Progetto di **Introduzione alla Programmazione** (a.a. 2024-2025) realizzato da **Chiara Mancuso**.
-
-## Obiettivo della Ricerca
-Il progetto analizza il rapporto tra la realtà occupazionale italiana e la sua rappresentazione linguistica, focalizzandosi sulle disparità di genere. 
-L'obiettivo è verificare se il linguaggio scritto rifletta la distribuzione reale dell'occupazione o se mostri dei bias di genere che influenzano la percezione delle professioni.
-
-## Metodologia
-Il lavoro si articola in tre fasi principali:
-1. **Analisi ISTAT:** Studio della distribuzione occupazionale in 7 settori chiave (Sanità, Ricerca, Istruzione, Editoria, Attività di Estrazione Mineraria, Attività Legali e Contabilità, Attività Immobiliari) tra il 2012 e il 2017.
-2. **Analisi Linguistica (Corpus Paisà):** Estrazione e quantificazione delle professioni tramite espressioni regolari e euristiche personalizzate, distinguendo il genere grammaticale.
-3. **Comparazione:** Confronto tra i valori di gender gap reali e quelli linguistici per evidenziare le discrepanze tra realtà sociale e linguaggio.
-
-## Struttura del Repository
-Il lavoro è organizzato in una struttura modulare per garantire leggibilità e riproducibilità:
-
-* **Progetto.ipynb**: Notebook principale con le analisi e le visualizzazioni grafiche.
-* **Moduli/**: Contiene gli script Python personalizzati (`euristiche.py`, `mie_funzioni.py`, `classe.py`).
-* **output_progetto/**: Cartella dedicata agli output salvati, divisa in sottocartelle per analisi ISTAT, Paisà e comparative.
-* **data/**: Cartelle segnaposto per i dataset in ingresso.
-
-
-
-## Gestione dei Dati e File Pesanti
-A causa delle dimensioni elevate (>100MB), alcuni file non sono inclusi direttamente nel repository:
-
-* **Dataset Grezzo (Corpus Paisà):** Deve essere scaricato da [questo link su Google Drive](https://drive.google.com/file/d/1e77ZmvziskUIFKFIXA_2ft9kDdIVUG1f/view?usp=sharing) e posizionato in `data/paisa/`.
-* **Dataset Puliti:** Il file `paisa_pulito.csv` e i DataFrame di analisi vengono generati automaticamente dal codice durante l'esecuzione delle fasi di normalizzazione e analisi.
-
-## Setup per l'esecuzione
-Per riprodurre l'analisi completa:
-1.  **Dataset ISTAT:** Assicurarsi che i dati siano presenti in `data/istat/`.
-2.  **Corpus Paisà:** Scaricare il file grezzo dal link Drive e inserirlo in `data/paisa/`.
-3.  **Esecuzione:** Eseguire il notebook `Progetto.ipynb`. La prima fase di normalizzazione creerà automaticamente i file necessari nella cartella `output_progetto/df_puliti/`.
-
-## Risultati Principali
-Dall'analisi emerge che il **Corpus Paisà tende a sovrastimare la presenza maschile** rispetto ai dati ufficiali ISTAT, specialmente nei settori a maggioranza femminile. Questo fenomeno riflette la persistenza di bias culturali e linguistici che privilegiano le forme maschili nel discorso scritto.
-
-## Tecnologie Utilizzate
-* **Linguaggio:** Python.
-* **Librerie:** Pandas, Matplotlib, Seaborn, Regex.
-* **Strumenti:** Jupyter Notebook per l'analisi interattiva.
+## 🎯 Research Objective
+This project investigates the relationship between the Italian occupational reality and its linguistic representation, focusing on gender disparities. The goal is to verify whether written language reflects the actual distribution of employment or if it exhibits **sociolinguistic biases** that skew the perception of professional roles.
 
 ---
-*Per un'analisi approfondita della metodologia e dei grafici, consultare la [Relazione Integrale](./Relazione_Chiara_Mancuso.pdf).* 
 
-##  Download Rapido
-Se desideri scaricare l'intero progetto pronto all'uso (inclusi i dataset pesanti >100MB e la struttura delle cartelle già configurata), puoi scaricare il pacchetto completo da Google Drive:
+## 🧪 Methodology
+The analysis is divided into three main phases:
 
-> [**Scarica la cartella del progetto da One Drive**](https://liveunibo-my.sharepoint.com/:u:/g/personal/chiara_mancuso5_studio_unibo_it/EY601zz6Rh9As1x2hhGOyjkBP1mPfg2IObVUNZZElVxjLQ?e=7i1Frx)
+1.  **ISTAT Analysis:** A study of the real-world occupational distribution across 7 key sectors (Healthcare, Research, Education, Publishing, Mining, Legal/Accounting, and Real Estate) between 2012 and 2017.
+2.  **Linguistic Analysis (Paisà Corpus):** Extraction and quantification of professional roles using **Regular Expressions (Regex)** and custom heuristics to identify grammatical gender.
+3.  **Comparative Analysis:** A direct comparison between real-world gender gap data and linguistic frequency to highlight discrepancies between social reality and language.
+
+---
+
+## 📂 Repository Structure
+The project is organized into a modular structure to ensure readability and reproducibility:
+
+* **`Progetto.ipynb`**: Main Jupyter Notebook containing the full analysis and data visualizations.
+* **`Moduli/`**: Directory containing custom Python scripts:
+    * `euristiche.py`: Heuristics for gender identification.
+    * `mie_funzioni.py`: Helper functions for data processing.
+    * `classe.py`: Object-oriented approach for data management.
+* **`output_progetto/`**: Directory for exported results, including charts and cleaned datasets.
+* **`data/`**: Placeholder directories for input datasets.
+
+---
+
+## 💾 Data Management & Large Files
+Due to high file sizes (>100MB), the raw linguistic data is not directly included in the repository:
+
+* **Raw Dataset (Paisà Corpus):** Must be downloaded from [this Google Drive link](https://drive.google.com/file/d/1e77ZmvziskUIFKFIXA_2ft9kDdIVUG1f/view?usp=sharing) and placed in `data/paisa/`.
+* **Cleaned Data:** The file `paisa_pulito.csv` and processed DataFrames are generated automatically by the code during the normalization phase.
+
+---
+
+## ⚙️ Setup & Execution
+To reproduce the full analysis:
+1.  **ISTAT Dataset:** Ensure the raw statistics are located in `data/istat/`.
+2.  **Paisà Corpus:** Download the raw file from the Google Drive link and place it in `data/paisa/`.
+3.  **Execution:** Run the `Progetto.ipynb` notebook. The normalization stage will automatically create the necessary files in `output_progetto/df_puliti/`.
+
+---
+
+## 💡 Key Findings
+The analysis reveals that the **Paisà Corpus significantly overestimates male presence** compared to official ISTAT data, especially in female-majority sectors. This phenomenon reflects the persistence of cultural and linguistic biases that privilege masculine forms in written discourse, reinforcing traditional gender stereotypes regardless of the actual labor market distribution.
+
+---
+
+## 🛠️ Technologies Used
+* **Language:** Python 3.x
+* **Libraries:** Pandas, Matplotlib, Seaborn, Regex (`re`)
+* **Tools:** Jupyter Notebook
+
+---
+
+## 📄 Documentation & Downloads
+* **Full Report:** For an in-depth analysis of the methodology and results, please refer to the [Full Project Report (IT)](./Relazione_Chiara_Mancuso.pdf).
+* **Full Package:** To download the complete project folder (including large datasets >100MB and pre-configured folder structures), use the link below:
+
+> 🚀 [**Download the full project package from OneDrive**](https://liveunibo-my.sharepoint.com/:u:/g/personal/chiara_mancuso5_studio_unibo_it/EY601zz6Rh9As1x2hhGOyjkBP1mPfg2IObVUNZZElVxjLQ?e=7i1Frx)
+
+---
+📫 **Contact:** [chiaramncs@gmail.com](mailto:chiaramncs@gmail.com)
