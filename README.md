@@ -51,7 +51,7 @@ The analysis reveals that the **Paisà Corpus significantly overestimates male p
 ---
 
 ## Technologies Used
-* **Language:** Python 3.x
+* **Language:** Python 3.13.2
 * **Libraries:** Pandas, Matplotlib, Seaborn, Regex (`re`)
 * **Tools:** Jupyter Notebook
 
